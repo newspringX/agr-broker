@@ -58,8 +58,64 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 0.1rem solid #cbcbcb;
+  border-bottom: 0.1rem solid #febb19;
   height: 8.6rem;
+}
+
+.header__action__inner {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+}
+
+.header__action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__action__tel-img {
+  padding: 0.6rem 0;
+}
+.header__action__tel-desc {
+  padding: 0.6rem 1.2rem;
+  color: var(--Brand-Red, #be1e2d);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.25rem;
+  letter-spacing: 0.1rem;
+}
+
+.header__action__tel-desc b {
+  color: var(--Brand-Red, #be1e2d);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.header__action__line {
+  height: 26px;
+  border: 1px solid #f1cdcf;
+}
+
+.header__action__arrow {
+  padding: 0.6rem 1.2rem;
+}
+
+.header__action__online {
+  padding: 0.6rem 0.6rem 1.2rem;
+  color: var(--Brand-Red, #be1e2d);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.25rem;
+  letter-spacing: 0.1rem;
+}
+
+.header__action__online b {
+  color: var(--Brand-Red, #be1e2d);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 /* Navbar */
@@ -215,4 +271,74 @@ button {
   flex-shrink: 0;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* Footer */
+
+.footer {
+  margin-top: 2.3rem;
+  display: flex;
+  column-gap: 4.8rem;
+}
+.footer__inner {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  background: #940700;
+  padding: 3.6rem 7.2rem 2.3rem 7.2rem;
+  column-gap: 4.8rem;
+}
+
+.footer__logo {
+  margin-bottom: 2.4rem;
+}
+.footer__h2 {
+  margin-bottom: 1.6rem;
+  color: var(--white-100, #fff);
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.08rem;
+  text-transform: uppercase;
+}
+.footer__desc {
+  margin-left: 0.4rem;
+  color: var(--white-100, #fff);
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 2.08rem;
+}
+.footer__item_wrap {
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.otherinfo__wrap {
+  margin-top: 2.4rem;
+}
+
+.otherinfo__list {
+  margin-top: 1.6rem;
+  display: flex;
+  align-items: center;
+}
+
+.otherinfo__list li:not(:first-child) a {
+  margin: 0 1.6rem;
+  color: var(--white-100, #fff);
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 2.08rem;
+}
+
+.otherinfo__list li:first-child a {
+  margin-right: 1.6rem;
+  color: var(--white-100, #fff);
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 2.08rem;
+}
+
+.footer__h2.margin-top-impact {
+  margin-top: 2.4rem;
 }
