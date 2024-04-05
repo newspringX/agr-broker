@@ -1,0 +1,42 @@
+/* PC point */
+@media screen and (min-width: 992px) {
+}
+
+/* Tablet and Mobile point*/
+
+@media screen and (max-width: 991.98px) {
+}
+
+/* Tablet point*/
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .header__action {
+    display: none;
+  }
+  .broker__row {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .broker__card {
+    min-width: 100%;
+  }
+  .footer {
+    display: none;
+  }
+}
+
+/* Mobile point*/
+@media screen and (max-width: 767.98px) {
+  .header__action__inner {
+    display: none;
+  }
+  .broker__row {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .broker__card {
+    min-width: 100%;
+  }
+  .footer {
+    display: none;
+  }
+}

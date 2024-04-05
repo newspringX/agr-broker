@@ -25,23 +25,6 @@ button {
   font-family: inherit;
 }
 
-/* PC point
-@media screen and (min-width: 992px) {
-}
-
-/* Tablet and Mobile point*/
-
-/* @media screen and (max-width: 991.98px) {
-} */
-
-/* Tablet point*/
-/* @media screen and (min-width: 768px) and (max-width: 991.98px) {
-} */
-
-/* Mobile point*/
-/* @media screen and (max-width: 767.98px) {
-} */
-
 /* Common */
 
 .container {
@@ -51,15 +34,17 @@ button {
 }
 /* Header */
 
-.header {
-}
-
 .logo_wrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 0.1rem solid #febb19;
   height: 8.6rem;
+}
+
+.logo:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 .header__action__inner {
@@ -77,6 +62,12 @@ button {
 .header__action__tel-img {
   padding: 0.6rem 0;
 }
+
+.header__action__tel-img:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
 .header__action__tel-desc {
   padding: 0.6rem 1.2rem;
   color: var(--Brand-Red, #be1e2d);
@@ -84,6 +75,11 @@ button {
   font-weight: 400;
   line-height: 2.25rem;
   letter-spacing: 0.1rem;
+}
+
+.header__action__tel-desc:hover {
+  cursor: pointer;
+  opacity: 0.7;
 }
 
 .header__action__tel-desc b {
@@ -102,6 +98,16 @@ button {
   padding: 0.6rem 1.2rem;
 }
 
+.header__action__arrow:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.header__action__online:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
 .header__action__online {
   padding: 0.6rem 0.6rem 1.2rem;
   color: var(--Brand-Red, #be1e2d);
@@ -116,6 +122,11 @@ button {
   font-size: 1.5rem;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.open_account:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 /* Navbar */
@@ -147,15 +158,15 @@ button {
   border: 2px solid #febb19;
 }
 .broker__row {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto;
   align-items: center;
   justify-content: space-evenly;
 }
 
 .broker__card {
   margin-top: 2.1rem;
-
-  width: 43rem;
+  min-width: 43rem;
   height: 51.1rem;
   border-radius: 2rem;
   background: rgba(217, 217, 217, 0.05);
@@ -281,12 +292,15 @@ button {
   column-gap: 4.8rem;
 }
 .footer__inner {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
   align-items: center;
   /* justify-content: space-between; */
   background: #940700;
+  background-image: url("../img/background2.png");
+  background-repeat: no-repeat;
   padding: 3.6rem 7.2rem 2.3rem 7.2rem;
-  column-gap: 4.8rem;
+  /* column-gap: 4.8rem; */
 }
 
 .footer__logo {
@@ -339,6 +353,10 @@ button {
   line-height: 2.08rem;
 }
 
+.otherinfo__link:hover {
+  color: #fff;
+  text-shadow: 1px 0 0 currentColor;
+}
 .footer__h2.margin-top-impact {
   margin-top: 2.4rem;
 }
